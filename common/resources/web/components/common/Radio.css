@@ -28,7 +28,6 @@ div.radio input[type=radio] + label::before {
     transition: all 250ms ease;
     border: 1px solid;
     border-color: var(--borderColorTop) var(--borderColorRight) var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em black;
 }
 
 div.radio input[type=radio]:checked + label::before {

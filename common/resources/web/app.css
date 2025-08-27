@@ -1,3 +1,41 @@
+@media (prefers-color-scheme: light) {
+    div.main-header,
+    div.main-header > div.search > input,
+    div.module-main,
+    kbd,div.module-main input[type='text'],
+    div.module-main input[type='number'],
+    div.module-main select,
+    ul.refs,
+    pre,
+    div.module-main button,
+    div.module-group > button:hover,
+    div.module-sections .script-editor,
+    input[type=checkbox].cb,
+    div.module-group > button,
+    div.radio input[type=radio] + label::before,
+    div.module-group {
+        box-shadow: 0.13em 0.13em 0.4em var(--boxShadowColor);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    div.main-header,
+    div.main-header > div.search > input,
+    div.module-main,
+    kbd,div.module-main input[type='text'],
+    div.module-main input[type='number'],
+    div.module-main select,
+    ul.refs,
+    pre,
+    div.module-main button,
+    div.module-group > button:hover,
+    div.module-sections .script-editor,
+    input[type=checkbox].cb,
+    div.module-group > button,
+    div.module-group {
+        box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
+    }
+}
+
 :root {
     /*  color 1  */
     --boxColor: #e8e3dd;
@@ -57,6 +95,7 @@
     }
 }
 
+
 body {
     --font: 'New Amsterdam', sans-serif;
     --font2: 'Roboto', sans-serif;
@@ -83,7 +122,6 @@ div.main-header {
     border-radius: 0.8em;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
 
 div.main-header > div {
@@ -120,7 +158,6 @@ div.main-header > div.search > input {
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
     background-color: var(--boxColor);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     color: var(--moduleTextColor);
     outline: none;
 }
@@ -217,7 +254,6 @@ div.module-main {
     border: 2px solid;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     color: var(--moduleTextColor);
 }
 
@@ -276,7 +312,6 @@ kbd {
     border: 1px solid;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     color: var(--moduleTextColor);
 }
 
@@ -290,7 +325,6 @@ div.module-main select {
     border-radius: 2px;
     font-family: var(--font2);
     font-size: 0.8em;
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     background-color: var(--boxColor);
     color: var(--moduleTextColor);
     outline: none;
@@ -313,7 +347,6 @@ div.module-main button {
     font-size: 1em;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
 
 div.module-main button:hover:not(:disabled) {
@@ -565,7 +598,6 @@ ul.refs {
     border-radius: 0.8em;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     overflow: auto;
 }
 
@@ -656,7 +688,6 @@ pre {
     border: 1px solid;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
 
 span.hint {

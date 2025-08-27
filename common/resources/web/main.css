@@ -28,7 +28,6 @@ div.module-group {
     gap: 0.2em;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
 
 div.module-group-header {
@@ -46,7 +45,6 @@ div.module-group > button {
     font-size: 1em;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
 
 div.module-group > button.external {
@@ -69,5 +67,4 @@ div.module-sections .script-editor {
     border: 1px solid;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
