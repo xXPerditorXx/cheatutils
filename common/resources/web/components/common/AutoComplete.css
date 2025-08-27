@@ -26,6 +26,8 @@ div.autocomplete > ul {
     right: 0;
     border-bottom-left-radius: 0.7em;
     border-bottom-right-radius: 0.7em;
+    border-color: var(--borderColorTop) var(--borderColorRight)
+        var(--borderColorBottom) var(--borderColorLeft);
 }
 
 div.autocomplete > ul > li {
@@ -36,5 +38,5 @@ div.autocomplete > ul > li {
 }
 
 div.autocomplete > ul > li:hover {
-    background-color: #F0F0F0;
+    background-color: var(--boxColorHover);
 }

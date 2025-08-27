@@ -343,7 +343,6 @@ kbd {
 }
 
 /* inputs */
-
 div.module-main input[type='text'],
 div.module-main input[type='number'],
 div.module-main select {
@@ -355,6 +354,10 @@ div.module-main select {
     background-color: var(--boxColor);
     color: var(--moduleTextColor);
     outline: none;
+}
+
+div.autocomplete input[type='text'] {
+    font-size: 14px;
 }
 
 div.module-main input[type='text']:focus,
