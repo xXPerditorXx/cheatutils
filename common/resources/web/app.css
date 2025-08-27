@@ -6,7 +6,7 @@
     div.module-main input[type='number'],
     div.module-main select,
     ul.refs,
-    pre,
+    pre, textarea,
     div.module-main button,
     div.module-group > button:hover,
     div.module-sections .script-editor,
@@ -38,7 +38,7 @@
     div.module-main input[type='number'],
     div.module-main select,
     ul.refs,
-    pre,
+    pre, textarea,
     div.module-main button,
     div.module-group > button:hover,
     div.module-sections .script-editor,
@@ -93,6 +93,10 @@
 
     --hrefButtonColor: #cc8900;
     --boxShadowColor: #00000080;
+
+    --fileSelectorColor: #e9e9ed;
+    --fileSelectorHoverColor: #dadadd;
+    --fileSelectorBorderColor: #2b2a337a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -119,6 +123,10 @@
 
         --hrefButtonColor: #74571c;
         --boxShadowColor: #000000FF;
+
+        --fileSelectorColor: #2b2a33;
+        --fileSelectorHoverColor: #393844;
+        --fileSelectorBorderColor: #e9e9ed5c;
     }
 }
 
@@ -199,6 +207,17 @@ a:hover {
 }
 
 /* common */
+textarea {
+    background-color: var(--boxColor);
+    border: 1px solid;
+    border-radius: 0.5em;
+    border-color: var(--borderColorTop) var(--borderColorRight)
+        var(--borderColorBottom) var(--borderColorLeft);
+    color: var(--moduleTextColor);
+    margin-bottom: 1.5em;
+    max-width: 99%;
+}
+
 
 .padding-bottom {
     padding-bottom: 0.5em;
@@ -312,6 +331,10 @@ div.section-description {
     font-size: 0.8em;
 }
 
+div.module-sections div > div.section-description {
+    margin-top: 0.8em;
+}
+
 fieldset {
     border-width: 0.2em;
     border-style: solid;
@@ -360,6 +383,7 @@ div.autocomplete input[type='text'] {
     font-size: 14px;
 }
 
+textarea:focus,
 div.module-main input[type='text']:focus,
 div.module-main input[type='number']:focus,
 div.module-main select:focus {
@@ -367,6 +391,24 @@ div.module-main select:focus {
 }
 
 /* buttons */
+
+input[type=file]::file-selector-button {
+    background-color: var(--fileSelectorColor);
+    color: var(--titleColor);
+    border: 1px solid var(--fileSelectorBorderColor);
+    border-radius: 0.35em;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: var(--fileSelectorHoverColor);
+    cursor: pointer;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
 
 div.module-main button {
     background-color: var(--boxColor);
