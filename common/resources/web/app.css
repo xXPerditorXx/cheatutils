@@ -379,6 +379,27 @@ div.module-main select {
     outline: none;
 }
 
+input[type="range"]::-moz-range-progress {
+    background-color: var(--activatedColor);
+    font-size: 15px;
+    border-radius: 1em;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: var(--boxColor);
+    border: 1px solid var(--moduleTypeColor);
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: var(--deactivatedColor);
+    font-size: 15px;
+    border-radius: 1em;
+}
+
+input[type="range"] {
+    background-color: var(--boxColor);
+}
+
 div.autocomplete input[type='text'] {
     font-size: 14px;
 }
