@@ -21,7 +21,7 @@ div.block-list div.canvas {
 }
 
 div.block-list > table td {
-    border-bottom: 0.1em solid var(--borderColorTop);
+    border-bottom: 0.1em solid var(--boxColorHover);
 }
 
 div.block-esp td.icon {

@@ -16,7 +16,7 @@ div.entity-list > table {
 }
 
 div.entity-list > table td {
-    border-bottom: 0.1em solid var(--borderColorTop);
+    border-bottom: 0.1em solid var(--boxColorHover);
     padding: 0.3em 0.1em 0.4em 0.1em;
 }
 
