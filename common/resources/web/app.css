@@ -111,7 +111,7 @@ div.main-header div.title a:visited {
 
 div.main-header > div.search > input {
     border: 2px solid;
-    border-radius: 0.4em;
+    border-radius: 0.2em;
     font-family: var(--font);
     font-size: 1.2em;
     padding-left: 0.5em;
