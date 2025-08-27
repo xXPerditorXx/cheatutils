@@ -27,6 +27,7 @@
     --apiRefColorMethod: #c28814;
 
     --hrefButtonColor: #cc8900;
+    --boxShadowColor: #00000080;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,6 +53,7 @@
         --apiRefColorMethod: #779ef1;
 
         --hrefButtonColor: #74571c;
+        --boxShadowColor: #000000FF;
     }
 }
 
@@ -81,7 +83,7 @@ div.main-header {
     border-radius: 0.8em;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em black;
+    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
 
 div.main-header > div {
@@ -118,7 +120,7 @@ div.main-header > div.search > input {
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
     background-color: var(--boxColor);
-    box-shadow: 0.1em 0.1em 0.6em black;
+    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     color: var(--moduleTextColor);
     outline: none;
 }
@@ -215,7 +217,7 @@ div.module-main {
     border: 2px solid;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em black;
+    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     color: var(--moduleTextColor);
 }
 
@@ -274,7 +276,7 @@ kbd {
     border: 1px solid;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em black;
+    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     color: var(--moduleTextColor);
 }
 
@@ -288,7 +290,7 @@ div.module-main select {
     border-radius: 2px;
     font-family: var(--font2);
     font-size: 0.8em;
-    box-shadow: 0.1em 0.1em 0.6em black;
+    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     background-color: var(--boxColor);
     color: var(--moduleTextColor);
     outline: none;
@@ -311,11 +313,11 @@ div.module-main button {
     font-size: 1em;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em black;
+    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
 
 div.module-main button:hover:not(:disabled) {
-    background-color: var(--backgroundColor);
+    background-color: var(--boxColorHover);
 }
 
 div.module-main button:disabled {
@@ -563,7 +565,7 @@ ul.refs {
     border-radius: 0.8em;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em black;
+    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
     overflow: auto;
 }
 
@@ -654,7 +656,7 @@ pre {
     border: 1px solid;
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
-    box-shadow: 0.1em 0.1em 0.6em black;
+    box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
 }
 
 span.hint {
