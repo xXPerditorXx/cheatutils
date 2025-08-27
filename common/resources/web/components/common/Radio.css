@@ -32,7 +32,6 @@ div.radio input[type=radio] + label::before {
 
 div.radio input[type=radio]:checked + label::before {
     background-color: var(--activatedColor);
-    box-shadow: inset 0 0 0 4px var(--boxColor);
 }
 
 div.radio input[type=radio]:focus + label::before {
@@ -41,7 +40,6 @@ div.radio input[type=radio]:focus + label::before {
 }
 
 div.radio input[type=radio]:disabled + label::before {
-    box-shadow: inset 0 0 0 4px var(--titleColor);
     border-color: darken(var(--titleColor), 25%);
     background: darken(var(--titleColor), 25%);
 }

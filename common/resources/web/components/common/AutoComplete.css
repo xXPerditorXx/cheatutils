@@ -7,10 +7,11 @@ div.autocomplete {
 div.autocomplete > input {
     box-sizing: border-box;
     width: 100%;
+    font-size: 14px;
 }
 
 div.autocomplete > ul {
-    background-color: white;
+    background-color: var(--backgroundColor);
     border: 1px solid #CCCCCC;
     list-style: none;
     margin: 0;
@@ -23,11 +24,15 @@ div.autocomplete > ul {
     left: 0;
     top: 100%;
     right: 0;
+    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
 }
 
 div.autocomplete > ul > li {
     cursor: pointer;
     word-break: break-all;
+    border-bottom: 1px solid var(--borderColorTop);
+    padding: 1px;
 }
 
 div.autocomplete > ul > li:hover {

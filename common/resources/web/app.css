@@ -13,8 +13,21 @@
     input[type=checkbox].cb,
     div.module-group > button,
     div.radio input[type=radio] + label::before,
+    div.autocomplete > ul,
     div.module-group {
         box-shadow: 0.13em 0.13em 0.4em var(--boxShadowColor);
+    }
+
+    div.radio input[type=radio]:disabled + label::before {
+        box-shadow:
+            inset 0 0 0 4px var(--titleColor),
+            0.13em 0.13em 0.4em var(--boxShadowColor);
+    }
+
+    div.radio input[type=radio]:checked + label::before {
+        box-shadow:
+            inset 0 0 0 4px var(--boxColor),
+            0.13em 0.13em 0.4em var(--boxShadowColor);
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -31,8 +44,22 @@
     div.module-sections .script-editor,
     input[type=checkbox].cb,
     div.module-group > button,
+    div.radio input[type=radio] + label::before,
+    div.autocomplete > ul,
     div.module-group {
         box-shadow: 0.1em 0.1em 0.6em var(--boxShadowColor);
+    }
+
+    div.radio input[type=radio]:disabled + label::before {
+        box-shadow:
+            inset 0 0 0 4px var(--titleColor),
+            0.1em 0.1em 0.6em var(--boxShadowColor);
+    }
+
+    div.radio input[type=radio]:checked + label::before {
+        box-shadow:
+            inset 0 0 0 4px var(--boxColor),
+            0.1em 0.1em 0.6em var(--boxShadowColor);
     }
 }
 
