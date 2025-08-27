@@ -37,7 +37,7 @@ div.module-group-header {
 }
 
 div.module-group > button {
-    background-color: var(--boxColor);
+    background-color: var(--buttonColor);
     border: 2px solid;
     border-radius: 0.45em;
     color: var(--moduleTextColor);

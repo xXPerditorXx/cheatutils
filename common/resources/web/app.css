@@ -29,7 +29,12 @@
             inset 0 0 0 4px var(--boxColor),
             0.13em 0.13em 0.4em var(--boxShadowColor);
     }
+
+    div.main-header > div.search > input {
+        color: #000;
+    }
 }
+
 @media (prefers-color-scheme: dark) {
     div.main-header,
     div.main-header > div.search > input,
@@ -61,6 +66,10 @@
             inset 0 0 0 4px var(--boxColor),
             0.1em 0.1em 0.6em var(--boxShadowColor);
     }
+
+    div.main-header > div.search > input {
+        color: #fff;
+    }
 }
 
 :root {
@@ -82,11 +91,13 @@
     --moduleTypeColor: #d86564;
     --deactivatedColor: #ce0b0b;
 
-    --borderColorTop: #dcd8cf;
-    --borderColorRight: #e2dfd6;
-    --borderColorBottom: #e5e2d9;
-    --borderColorLeft: #e1ded5;
-    --moduleTextColor: #7e7d73;
+    --buttonColor: #f2f0ec;
+
+    --borderColorTop: #97938c;
+    --borderColorRight: #918a8a;
+    --borderColorBottom: #868480;
+    --borderColorLeft: #99958b;
+    --moduleTextColor: #60605e;
 
     --apiRefColorClass: #28a0d4;
     --apiRefColorMethod: #c28814;
@@ -112,11 +123,13 @@
         --moduleTypeColor: #279a9b;
         --deactivatedColor: #7f2222;
 
-        --borderColorTop: #232730;
-        --borderColorRight: #1d2029;
-        --borderColorBottom: #1a1d26;
-        --borderColorLeft: #1e212a;
-        --moduleTextColor: #81828c;
+        --buttonColor: #1c2128;
+
+        --borderColorTop: #2b303c;
+        --borderColorRight: #252a37;
+        --borderColorBottom: #272b39;
+        --borderColorLeft: #212531;
+        --moduleTextColor: #a9abbd;
 
         --apiRefColorClass: #daab66;
         --apiRefColorMethod: #779ef1;
@@ -193,7 +206,6 @@ div.main-header > div.search > input {
     border-color: var(--borderColorTop) var(--borderColorRight)
         var(--borderColorBottom) var(--borderColorLeft);
     background-color: var(--boxColor);
-    color: var(--moduleTextColor);
     outline: none;
 }
 
@@ -217,7 +229,6 @@ textarea {
     margin-bottom: 1.5em;
     max-width: 99%;
 }
-
 
 .padding-bottom {
     padding-bottom: 0.5em;
@@ -369,8 +380,7 @@ kbd {
 div.module-main input[type='text'],
 div.module-main input[type='number'],
 div.module-main select {
-    border-width: 0.1em;
-    border-style: solid;
+    border: 0.1em solid var(--boxColorHover);
     border-radius: 2px;
     font-family: var(--font2);
     font-size: 0.8em;
@@ -432,7 +442,7 @@ input[type=number] {
 
 
 div.module-main button {
-    background-color: var(--boxColor);
+    background-color: var(--buttonColor);
     border: 2px solid;
     border-radius: 0.4em;
     color: var(--moduleTextColor);
